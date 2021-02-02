@@ -1,0 +1,253 @@
+body {
+  text-align: center;
+}
+
+/* HEADER ---------------------------------------------*/
+/*wraps navbar on header img*/
+header {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #8360c3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2ebf91, #8360c3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Pads the navigation bar */
+nav {
+  padding-top: 30px;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f2f2f2;
+  padding: 30px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Set header dimensions - left nav */
+#left-nav {
+  float: left;
+  display: inline-block;
+  text-align: center;
+  width: 33vw;
+}
+
+/* Set header dimensions - center logo */
+.center-logo {
+  display: inline-block;
+  text-align: center;
+  width: 33vw;
+  font-size: 30px;
+}
+
+/* Set header dimensions - right nav */
+#right-nav {
+  float: right;
+  display: inline-block;
+  text-align: center;
+  width: 33vw;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+/* MAIN -----------------------------------------------*/
+section {
+  inset: 0px 120px 0px;
+  /* activate to view sections*/
+  /* background-color: purple; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* profile section */
+#profile-section {
+  margin-top: 140px;
+  min-height: 66vh;
+  display: block;
+  vertical-align: middle;
+}
+
+#profile-pic {
+  width: 25%;
+  height: 25%;
+  float: left;
+  margin: 0 50px 20px 0;
+  padding-left: 50px;
+}
+
+#profile-text {
+  text-align: justify;
+  padding-top: 80px;
+  width: 1700px;
+  min-height: 66vh;
+  font-size: 20px;
+}
+
+/* certifications section */
+#certification-section {
+  min-height: 66vh;
+  margin-top: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-evenly;
+}
+
+.cert-img {
+  height: 75%;
+  width: 75%;
+}
+
+#cert5 {
+  grid-column-start: 3;
+}
+
+/* testimonials section */
+#testimonial-section {
+  min-height: 66vh;
+  margin-top: 40px;
+}
+
+.test-line {
+  height: 2px;
+  background: #8360c3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2ebf91, #8360c3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.quote {
+  text-align: left;
+  margin: 30px 50px 0 50px;
+  font-size: 20px;
+}
+
+.sig {
+  font-weight: bold;
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+/* learn more section */
+#learnMore-section {
+  min-height: 33vh;
+  margin-top: 40px;
+}
+
+#learnMore-header {
+  font-size: 45px;
+}
+
+#learnMore-sub {
+  font-size: 20px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 60px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 12px;
+  border-radius: 12px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* SIGN-OFF --------------------------------------------*/
+/*designed by & contact*/
+#contact-section {
+  color: black;
+  text-align: center;
+  min-height: 33vh;
+}
+
+.contact-links {
+  height: auto;
+  width: 100%;
+}
+
+.contact-img {
+  height: 75px;
+  width: 75px;
+  padding: 25px;
+}
+
+#git-logo {
+  height: 75px;
+  width: 125px;
+}
