@@ -15,7 +15,7 @@
     <style src = "style.css">
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   
   <body>
@@ -26,11 +26,11 @@
         <a href = "#certification-section">Certifications</a>
         <a href = "#testimonial-section">Testimonials</a>
         </div>
-        <div class = "center-logo">
-        <h1 id = "header-center">YOUR LOGO</h1>
+        <div id = "lg-screen-logo" class = "center-logo">
+        <img id = "header-center" src = "https://www.pikpng.com/pngl/b/583-5830237_your-logo-retulp-bus-stop-clipart.png">
         </div>
         <div class = "topnav" id = "right-nav">
-        <a href = "#learnMore-section">Contact</a>
+            <a href = "#learnMore-section">Contact</a>
         </div>
       </nav>
     </header>
@@ -38,9 +38,10 @@
     <main>
       <div id = "profile-section">
         <section>
-          
-
+          <div id = "profile-cont">
+        <div id = "profile-img">
           <img id = "profile-pic" src = "https://blogs.anl.gov/wp-content/uploads/sites/32/2013/09/Your-Face-Here-V3.jpg">
+          </div>
              
           <div id = "profile-text">
                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id consectetur purus ut faucibus pulvinar elementum integer enim. Mattis rhoncus urna neque viverra justo nec. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Orci sagittis eu volutpat odio facilisis mauris sit amet. Ut consequat semper viverra nam. Tempus iaculis urna id volutpat lacus laoreet non curabitur. Ac turpis egestas sed tempus urna. Lorem mollis aliquam ut porttitor. Quis blandit turpis cursus in hac habitasse platea. Ac orci phasellus egestas tellus rutrum tellus. Quis viverra nibh cras pulvinar mattis nunc. A diam maecenas sed enim ut sem. Gravida in fermentum et sollicitudin ac orci.</p>
@@ -48,6 +49,7 @@
 <p>Vitae suscipit tellus mauris a diam maecenas sed. Tortor at risus viverra adipiscing at. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Purus sit amet volutpat consequat mauris nunc congue nisi. Sed enim ut sem viverra aliquet. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Enim neque volutpat ac tincidunt. Ac turpis egestas maecenas pharetra. At augue eget arcu dictum varius duis at consectetur. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Eu facilisis sed odio morbi quis commodo. Nisi scelerisque eu ultrices vitae auctor.</p>
 
 <p>Augue neque gravida in fermentum et sollicitudin ac orci. In iaculis nunc sed augue lacus viverra vitae congue eu. Viverra nibh cras pulvinar mattis nunc sed. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Nunc consequat interdum varius sit amet mattis. Hac habitasse platea dictumst quisque sagittis purus. Vitae ultricies leo integer malesuada nunc vel risus commodo. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Orci sagittis eu volutpat odio facilisis. Viverra accumsan in nisl nisi scelerisque eu.</p>
+          </div>
           </div>
           
         </section>
@@ -136,11 +138,14 @@
       <section id = "contact" class = "container">
         <h2 id = "contact-title">Designed & Coded by Cole Crum</h2>
      <div class="contact-links">
-      
-       <a id = "profile-link" href = "https://github.com/colecrum?tab=repositories" target="_blank" class="btn contact-details"><img id = "git-logo" class = "contact-img" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHXk1n8mQe3sbaaMDgiqtSeSC8QySxLfgkaA&usqp=CAU" title = "GitHub"></a>
-    <a href="https://codepen.io/colecrum" target="_blank" class="btn contact-details"><img class="contact-img" src = "https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" title = "CodePen" </a>
-    <a href="mailto:colemcrum@gmail.com" target="_blank" class="btn contact-details"><img class="contact-img" src = "https://lh3.googleusercontent.com/VS3B_qhOFTYsdyNfnlr98zg3HNjB_Gcs9bxVnaQO9MysAoBOXMHATClhRviImKKJV8RV-0s7hl8KeVQcij5Iagb1exHzt40x679l8Q=w0" title = "Email"></a>
-    <a href="tel:512-517-8503" target="_blank" class="btn contact-details"><img class="contact-img" src = "https://cdn4.iconfinder.com/data/icons/phones-colored/48/JD-32-512.png" title = "Phone"></a>
+      <div class = "link-cont" id = "git-cont">
+       <a id = "profile-link" href = "https://github.com/colecrum?tab=repositories" target="_blank" class="btn contact-details"><img id = "git-logo" class = "contact-img" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHXk1n8mQe3sbaaMDgiqtSeSC8QySxLfgkaA&usqp=CAU" title = "GitHub"></a></div>
+       <div class = "link-cont" id = "pen-cont">
+    <a href="https://codepen.io/colecrum" target="_blank" class="btn contact-details"><img class="contact-img" src = "https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" title = "CodePen" </a></div>
+         <div class = "link-cont" id = "mail-cont">
+    <a href="mailto:colemcrum@gmail.com" target="_blank" class="btn contact-details"><img class="contact-img" src = "https://lh3.googleusercontent.com/VS3B_qhOFTYsdyNfnlr98zg3HNjB_Gcs9bxVnaQO9MysAoBOXMHATClhRviImKKJV8RV-0s7hl8KeVQcij5Iagb1exHzt40x679l8Q=w0" title = "Email"></a></div>
+         <div class = "link-cont" id = "phone-cont">
+    <a href="tel:512-517-8503" target="_blank" class="btn contact-details"><img class="contact-img" src = "https://cdn4.iconfinder.com/data/icons/phones-colored/48/JD-32-512.png" title = "Phone"></a></div>
   </div>       
         </div>
       </section>

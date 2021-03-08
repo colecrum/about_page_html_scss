@@ -1,13 +1,15 @@
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   text-align: center;
+  position: relative;
 }
 
 /* HEADER ---------------------------------------------*/
 /*wraps navbar on header img*/
 header {
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
   position: fixed;
   top: 0;
   left: 0;
@@ -59,7 +61,6 @@ nav {
   display: inline-block;
   text-align: center;
   width: 33vw;
-  font-size: 30px;
 }
 
 /* Set header dimensions - right nav */
@@ -70,18 +71,18 @@ nav {
   width: 33vw;
 }
 
-/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+#header-center {
+  width: 25%;
+  height: auto;
+}
+
 @media screen and (max-width: 600px) {
-  .topnav a, .topnav-right {
+  #right-nav {
     float: none;
-    display: block;
   }
 
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
+  #header-center {
+    width: 50%;
   }
 }
 /* MAIN -----------------------------------------------*/
@@ -93,7 +94,7 @@ section {
   padding-bottom: 20px;
 }
 
-/* profile section */
+/* profile section ----------------------------------*/
 #profile-section {
   margin-top: 140px;
   min-height: 66vh;
@@ -117,7 +118,28 @@ section {
   font-size: 20px;
 }
 
-/* certifications section */
+@media screen and (max-width: 600px) {
+  #profile-cont {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+  }
+
+  #profile-img {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 250%;
+    height: auto;
+  }
+
+  #profile-text {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 100%;
+    height: auto;
+  }
+}
+/* certifications section ------------------------------*/
 #certification-section {
   min-height: 66vh;
   margin-top: 40px;
@@ -140,7 +162,7 @@ section {
   grid-column-start: 3;
 }
 
-/* testimonials section */
+/* testimonials section ---------------------------------*/
 #testimonial-section {
   min-height: 66vh;
   margin-top: 40px;
@@ -170,7 +192,16 @@ section {
   font-size: 18px;
 }
 
-/* learn more section */
+@media screen and (max-width: 600px) {
+  .quote {
+    margin: auto;
+  }
+
+  .sig {
+    margin: auto;
+  }
+}
+/* learn more section --------------------------------*/
 #learnMore-section {
   min-height: 33vh;
   margin-top: 40px;
@@ -238,16 +269,28 @@ section {
 
 .contact-links {
   height: auto;
-  width: 100%;
+  width: 25%;
+  display: inline-block;
+  padding: 20px;
+}
+
+.link-cont {
+  float: left;
+  width: 25%;
 }
 
 .contact-img {
   height: 75px;
   width: 75px;
-  padding: 25px;
 }
 
 #git-logo {
   height: 75px;
-  width: 125px;
+  width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-links {
+    width: 100%;
+  }
 }
