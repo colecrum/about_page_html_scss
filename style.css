@@ -77,12 +77,21 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
+  nav {
+    padding-top: 5px;
+  }
+
   #right-nav {
     float: none;
   }
 
   #header-center {
     width: 50%;
+  }
+}
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  nav {
+    padding-top: 5px;
   }
 }
 /* MAIN -----------------------------------------------*/
@@ -119,10 +128,13 @@ section {
 }
 
 @media screen and (max-width: 600px) {
+  #profile-section {
+    margin-top: 75px;
+  }
+
   #profile-cont {
     display: grid;
     grid-template-rows: auto auto;
-    grid-gap: 20px;
   }
 
   #profile-img {
@@ -132,11 +144,42 @@ section {
     height: auto;
   }
 
+  #profile-pic {
+    margin: auto;
+  }
+
   #profile-text {
     grid-row-start: 2;
     grid-row-end: 2;
     width: 100%;
     height: auto;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  #profile-section {
+    margin-top: 75px;
+  }
+
+  #profile-cont {
+    display: flex;
+  }
+
+  #profile-img {
+    width: 45%;
+  }
+
+  #profile-pic {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-left: 0px;
+  }
+
+  #profile-text {
+    padding-top: 0px;
+    width: 50%;
+    padding-left: 10px;
   }
 }
 /* certifications section ------------------------------*/
@@ -290,6 +333,11 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
+  .contact-links {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) and (orientation: landscape) {
   .contact-links {
     width: 100%;
   }
