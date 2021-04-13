@@ -94,6 +94,12 @@ nav {
     padding-top: 5px;
   }
 }
+@media screen and (max-width: 1000px) {
+  nav {
+    padding-top: 0px;
+    padding: 20px;
+  }
+}
 /* MAIN -----------------------------------------------*/
 section {
   inset: 0px 120px 0px;
@@ -180,6 +186,37 @@ section {
     padding-top: 0px;
     width: 50%;
     padding-left: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #profile-section {
+    margin-top: 75px;
+  }
+
+  #profile-cont {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  #profile-img {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 250%;
+    height: auto;
+    margin-left: 100px;
+  }
+
+  #profile-pic {
+    margin: auto;
+  }
+
+  #profile-text {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 95%;
+    height: auto;
+    padding-top: 20px;
+    margin-left: 10px;
   }
 }
 /* certifications section ------------------------------*/
@@ -338,6 +375,11 @@ section {
   }
 }
 @media screen and (max-width: 800px) and (orientation: landscape) {
+  .contact-links {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
   .contact-links {
     width: 100%;
   }
